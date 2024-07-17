@@ -1,12 +1,15 @@
 import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-   <div>
-      <h1 className="text-3xl font-bold underline bg-red-600">
-        Hello world!
-      </h1>
-   </div>
+    <Router>
+      <Navbar />
+      <div id='pageContent'>
+        <Route exact path="" component={}/>
+      </div>
+    </Router>
   );
 }
 
