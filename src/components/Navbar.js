@@ -32,9 +32,9 @@ class Navbar extends Component {
 
                 <div className={this.state.clicked ? 'navbar active' : 'navbar'} id='navbarStack'>
                     <div className='flex flex-col'>
-                        <Link to="/about" className='ml-10 text-3xl'>About</Link>
-                        <Link to="/" className='ml-10 text-3xl'>Portfolio</Link>
-                        <Link to="/contact" className='ml-10 text-3xl'>Contact</Link>
+                        <Link to="/about" className='text-3xl' onClick={this.handleClick}>About</Link>
+                        <Link to="/" className='text-3xl' onClick={this.handleClick}>Portfolio</Link>
+                        <Link to="/contact" className='text-3xl' onClick={this.handleClick}>Contact</Link>
                     </div>
                 </div>
             </div>
