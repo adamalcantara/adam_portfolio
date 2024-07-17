@@ -15,7 +15,7 @@ class Navbar extends Component {
 
         return (
             <div className='flex justify-between items-center h-[55px]' id='navbar'>
-                <div>
+                <div id='mobileNav'>
                     <div className='text-4xl ml-5'>{logoText}</div>
                     <div id='burger' onClick={this.handleClick}>
                         <div id="line1" className={this.state.clicked ? 'line1click' : ''}></div>
@@ -23,11 +23,20 @@ class Navbar extends Component {
                         <div id="line3" className={this.state.clicked ? 'line3click' : ''}></div>
                     </div>
                 </div>
-                <nav className='mr-5 text-3xl'>
-                    <Link to="/about" className='ml-10'>About</Link>
-                    <Link to="/" className='ml-10'>Portfolio</Link>
-                    <Link to="/contact" className='ml-10'>Contact</Link>
-                </nav>
+
+                <div id="desktopNav">
+                        <Link to="/about" className='ml-10 text-3xl'>About</Link>
+                        <Link to="/" className='ml-10 text-3xl'>Portfolio</Link>
+                        <Link to="/contact" className='ml-10 text-3xl'>Contact</Link>
+                </div>
+
+                <div className={this.state.clicked ? 'navbar active' : 'navbar'} id='navbarStack'>
+                    <div className='flex flex-col'>
+                        <Link to="/about" className='ml-10 text-3xl'>About</Link>
+                        <Link to="/" className='ml-10 text-3xl'>Portfolio</Link>
+                        <Link to="/contact" className='ml-10 text-3xl'>Contact</Link>
+                    </div>
+                </div>
             </div>
         )
     }
