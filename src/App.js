@@ -7,6 +7,7 @@ import Portfolio from './Pages/Portfolio';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import iphone from './Projects/iphone';
+import FinishChecker from './Projects/FinishChecker';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/about" Component={About} />
             <Route exact path="/contact" Component={Contact} />
             <Route exact path="/iphoneclone" Component={iphone} />
+            <Route exact path="/finishchecker" Component={FinishChecker} />
           </Routes>
       </div>
     </Router>
