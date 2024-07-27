@@ -14,9 +14,9 @@ class Navbar extends Component {
         const logoText = "<Adam />";
 
         return (
-            <div className='flex justify-between items-center h-[55px]' id='navbar'>
+            <div className='flex justify-between items-center h-[55px] bg-zinc-100' id='navbar'>
                 <div id='mobileNav'>
-                    <div className='text-4xl ml-5'>{logoText}</div>
+                    <Link to="/about" className='text-4xl ml-5 hover:text-zinc-500'>{logoText}</Link>
                     <div id='burger' onClick={this.handleClick}>
                         <div id="line1" className={this.state.clicked ? 'line1click' : ''}></div>
                         <div id="line2" className={this.state.clicked ? 'line2click' : ''}></div>
@@ -25,9 +25,9 @@ class Navbar extends Component {
                 </div>
 
                 <div id="desktopNav">
-                        <Link to="/about" className='ml-10 text-3xl'>About</Link>
-                        <Link to="/" className='ml-10 text-3xl'>Portfolio</Link>
-                        <Link to="/contact" className='ml-10 text-3xl'>Contact</Link>
+                        <Link to="/about" className='ml-10 text-3xl hover:text-zinc-500'>About</Link>
+                        <Link to="/" className='ml-10 text-3xl hover:text-zinc-500'>Portfolio</Link>
+                        <Link to="/contact" className='ml-10 text-3xl hover:text-zinc-500'>Contact</Link>
                 </div>
 
                 <div className={this.state.clicked ? 'navbar active' : 'navbar'} id='navbarStack'>
