@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 
 // import pages
-import Portfolio from './Pages/Portfolio';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
+import Home from './Pages/Home';
 import iphone from './Projects/iphone';
 import FinishChecker from './Projects/FinishChecker';
 import BookTracker from './Projects/BookTracker';
@@ -18,9 +16,7 @@ function App() {
       {/* <Navbar /> */}
       <div id='pageContent' className='w-[100%] m-auto mt-5'>
           <Routes>
-            <Route exact path="/" Component={Portfolio} />
-            <Route exact path="/about" Component={About} />
-            <Route exact path="/contact" Component={Contact} />
+            <Route exact path="/" Component={Home} />
             <Route exact path="/iphoneclone" Component={iphone} />
             <Route exact path="/finishchecker" Component={FinishChecker} />
             <Route exact path="/booktracker" Component={BookTracker} />
