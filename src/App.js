@@ -15,8 +15,8 @@ import TheGrunyons from './Projects/TheGrunyons';
 function App() {
   return (
     <Router>
-      <Navbar />
-      <div id='pageContent' className='w-[80%] m-auto mt-5'>
+      {/* <Navbar /> */}
+      <div id='pageContent' className='w-[100%] m-auto mt-5'>
           <Routes>
             <Route exact path="/" Component={Portfolio} />
             <Route exact path="/about" Component={About} />
