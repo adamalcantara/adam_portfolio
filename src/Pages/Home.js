@@ -1,13 +1,12 @@
 import React from 'react';
-import Card from '../components/Cards';
 import Hero from '../components/Hero';
+import Portfolio from '../components/Portfolio';
 
 const Home = () => {
   return (
     <div>
         <Hero />
-        <Card />
-
+        <Portfolio />
     </div>
   )
 }
