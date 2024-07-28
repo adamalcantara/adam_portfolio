@@ -49,8 +49,8 @@ function Card() {
     ]
     const renderCard = (card, index) => {
         return (
-            <div>
-                <div id='card' className='h-fit w-[100%] flex flex-col justify-between'>
+            <div key={index}>
+                <div id='card'  className='h-fit w-[100%] flex flex-col justify-between'>
                     <Link to={card.link}>
                         <div className='relative overflow-hidden'>
                             <img src={card.image} className='w-[100%] hover:opacity-85 '></img>
