@@ -15,7 +15,7 @@ const Nav = () => {
     }, [dark])
 
     return (
-        <div className='flex items-center h-[35px] fixed top-0 z-50 bg-white dark:bg-zinc-900 w-full md:text-2xl'>
+        <div className='flex items-center h-[35px] fixed top-0 z-50 bg-zinc-100 dark:bg-zinc-950 w-full md:text-2xl'>
             <div className='flex items-center mx-auto'>
                 <Link to='#myWork' smooth className='mx-2 text-black dark:text-white hover:text-zinc-400 dark:hover:text-zinc-500'>My Work</Link>
                 <Link to='#about' smooth className='mx-2 text-black dark:text-white hover:text-zinc-400 dark:hover:text-zinc-500'>About</Link>
