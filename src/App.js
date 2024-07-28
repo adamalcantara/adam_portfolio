@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import Nav from './components/Nav';
 
 // import pages
 import Home from './Pages/Home';
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       {/* <Navbar /> */}
+      <Nav />
       <div id='pageContent' className='w-[100%] m-auto'>
           <Routes>
             <Route exact path="/" Component={Home} />
