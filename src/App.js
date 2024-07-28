@@ -16,7 +16,7 @@ function App() {
     <Router>
       {/* <Navbar /> */}
       <Nav />
-      <div id='pageContent' className='w-[100%] m-auto'>
+      <div id='pageContent' className='w-[100%] m-auto mt-[35px]'>
           <Routes>
             <Route exact path="/" Component={Home} />
             <Route exact path="/iphoneclone" Component={iphone} />
