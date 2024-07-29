@@ -8,7 +8,7 @@ import { DiMongodb } from "react-icons/di";
 
 const Skills = () => {
   return (
-    <div className='mt-10 text-black dark:text-white'>
+    <div className='mt-10 text-black dark:text-white w-full 2xl:w-[75%] mx-auto'>
         <div className='grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-7 gap-5'>
             <div className='flex flex-col justify-center items-center'>
                 <FaHtml5  className='text-3xl'/>
