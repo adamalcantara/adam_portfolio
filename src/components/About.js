@@ -1,6 +1,8 @@
 import React from 'react';
 import Skills from './Skills';
 
+import Resume from '../assets/Alcantara_resume_2024_noinfo.pdf';
+
 const About = () => {
   return (
     <div className='pt-10 pb-10 dark:bg-zinc-900 ' id='about'>
@@ -21,7 +23,9 @@ const About = () => {
       </div>
 
       <Skills />
-      
+      <div className='flex justify-center mt-5'>
+        <a href={Resume} className='bg-black dark:bg-white hover:bg-zinc-500 dark:hover:bg-zinc-500 text-white p-2 dark:text-black inline-block'>Download My Resume</a>
+      </div>
     </div>
     </div >
   )
