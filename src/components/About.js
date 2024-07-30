@@ -21,6 +21,7 @@ const About = () => {
       </div>
 
       <Skills />
+      
     </div>
     </div >
   )
