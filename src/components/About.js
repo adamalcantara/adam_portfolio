@@ -11,7 +11,7 @@ const About = () => {
 
         {/* bio */}
         <div className='flow-root'>
-          <div className='text-[20px]'>Since I can remember, I have loved creating great experiences. This has extended across multiple artistic disciplines and has manifested itself in my journey as a web developer. When I started building websites, I was fortunate to discover a passion for UX/UI.</div>
+          <div className='text-[20px]'>Since I can remember, I have loved creating great experiences. This has extended across multiple artistic disciplines and has manifested itself in my journey as a web developer. When I started building websites, I was fortunate to discover a passion for UX/UI. I have always loved design and have done graphic design, but nothing compares to designing user experiences on the internet.</div>
         </div>
 
         <div className='flow-root mt-5'>
