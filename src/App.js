@@ -10,6 +10,7 @@ import FinishChecker from './Projects/FinishChecker';
 import BookTracker from './Projects/BookTracker';
 import TheGuitarologist from './Projects/TheGuitarologist';
 import TheGrunyons from './Projects/TheGrunyons';
+import ThreeTwentyFive from './Projects/ThreeTwentyFive';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/booktracker" Component={BookTracker} />
             <Route exact path="/theguitarologist" Component={TheGuitarologist} />
             <Route exact path="/grunyons" Component={TheGrunyons} />
+            <Route exact path="/325" Component={ThreeTwentyFive} />
           </Routes>
       </div>
     </Router>

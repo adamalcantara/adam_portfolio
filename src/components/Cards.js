@@ -7,10 +7,17 @@ import FinishCheckerImg from "../assets/card_images/finishchecker.png";
 import BookstoreImg from "../assets/card_images/bookstore.png";
 import GuitarologistImg from "../assets/card_images/theguitarologist.png";
 import GrunyonsImg from "../assets/card_images/grunyons.png";
+import ThreeTwentyFiveImg from "../assets/card_images/threetwentyfivearchive.png";
 
 function Card() {
 
     const cardInfo = [
+        {
+            id: "threetwentyfive",
+            image: ThreeTwentyFiveImg,
+            title: "325 Archive",
+            link: "/325"
+        },
         {
             id: "bookstore",
             image: BookstoreImg,
