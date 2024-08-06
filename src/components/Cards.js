@@ -16,6 +16,7 @@ function Card() {
             id: "threetwentyfive",
             image: ThreeTwentyFiveImg,
             title: "325 Archive",
+            description: "A WordPress website with a custom coded theme to chronicle 1958 Rickenbacker 325 models.",
             link: "/325"
         },
         {
@@ -30,7 +31,9 @@ function Card() {
             image: GrunyonsImg,
             title: "The Grunyons",
             description: "A website for Michigan-based acapella group The Grunyons which was built in ReactJS and features a Spotify implementation.",
-            link: "/grunyons"
+            link: "/grunyons",
+            deployed: "https://thegrunyons.com/",
+            github: "https://github.com/adamalcantara/grunyons"
         },
         {
             id: "theguitarologist",
@@ -57,21 +60,35 @@ function Card() {
     const renderCard = (card, index) => {
         return (
             <div key={index}>
-                <div id='card'  className='h-fit w-[100%] flex flex-col justify-between'>
-                    <Link to={card.link}>
-                        <div className='relative overflow-hidden'>
-                            <img src={card.image} className='w-[100%] hover:opacity-85 '></img>
-                            <div className='absolute h-full w-full flex items-center justify-center bottom-0 group-hover:bottom-0 bg-zinc-800/75 hover:opacity-100 sm:opacity-100 md:opacity-0 transition ease-in-out duration-500 text-white text-4xl'>
-                                {card.title}
+                <div id='card' className='h-fit w-[100%] flex flex-col justify-between'>
+                    {/* title */}
+                    <div className='text-3xl text-center'>
+                        <p>{card.title}</p>
+                    </div>
+
+                    {/* Box for content */}
+                    <div className='flex'>
+                        {/* Image */}
+                        <div className='w-1/4'>
+                            <img src={card.image}></img>
+                        </div>
+
+                        {/* Project content */}
+                        <div className='w-3/4'>
+                            <p className='text-2xl'>{card.description}</p>
+                            <div>
+                                {card.deployed ? <a href={card.deployed} target='_blank' className='bg-black text-white p-2 mr-2 inline-block'>Deployed Project</a> : ''}
+                                <a href={card.github} target='_blank' className='bg-black text-white p-2 mr-2 inline-block'>GitHub Repository</a>
                             </div>
                         </div>
-                    </Link>
+                    </div>
+
                 </div>
             </div>
         )
     };
 
-    return <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+    return <div className='w-2/3 mx-auto'>
         {cardInfo.map(renderCard)}
     </div>;
 }
