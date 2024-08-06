@@ -67,14 +67,14 @@ function Card() {
                     </div>
 
                     {/* Box for content */}
-                    <div className='flex'>
+                    <div className='flex flex-col md:flex-row'>
                         {/* Image */}
-                        <div className='w-1/4'>
+                        <div className='md:w-1/4'>
                             <img src={card.image}></img>
                         </div>
 
                         {/* Project content */}
-                        <div className='w-3/4'>
+                        <div className='md:w-3/4'>
                             <p className='text-2xl'>{card.description}</p>
                             <div>
                                 {card.deployed ? <a href={card.deployed} target='_blank' className='bg-black text-white p-2 mr-2 inline-block'>Deployed Project</a> : ''}
@@ -88,7 +88,7 @@ function Card() {
         )
     };
 
-    return <div className='w-2/3 mx-auto'>
+    return <div className='w-1/2 mx-auto'>
         {cardInfo.map(renderCard)}
     </div>;
 }
