@@ -9,7 +9,11 @@ import GuitarologistImg from "../assets/card_images/theguitarologist.png";
 import GrunyonsImg from "../assets/card_images/grunyons.png";
 import ThreeTwentyFiveImg from "../assets/card_images/threetwentyfivearchive.png";
 
-import { FaHtml5, FaCss3, FaReact, FaPython, FaWordpress } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaPython, FaWordpress, FaNode } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
 
 function Card() {
 
@@ -19,22 +23,23 @@ function Card() {
             image: ThreeTwentyFiveImg,
             title: "325 Archive",
             description: "A WordPress website with a custom coded theme to chronicle 1958 Rickenbacker 325 models.",
-            link: "/325"
+            madewith: [<FaWordpress />, <FaCss3 />, <IoLogoJavascript />],
+            github: "https://github.com/adamalcantara/325archive"
         },
         {
             id: "bookstore",
             image: BookstoreImg,
             title: "Book Tracker",
             description: "A MERN stack application which supports the CRUD method and allows users to track book information.",
-            link: "/booktracker"
+            madewith: [<DiMongodb />, <SiExpress />, <FaReact />, <FaNode />, <RiTailwindCssFill />],
+            github: "https://github.com/adamalcantara/bookstore"
         },
         {
             id: "grunyons",
             image: GrunyonsImg,
             title: "The Grunyons",
             description: "A website for Michigan-based acapella group The Grunyons which was built in ReactJS and features a Spotify implementation.",
-            link: "/grunyons",
-            madewith: [<FaHtml5 />, <FaCss3 />],
+            madewith: [<FaReact />, <FaCss3 />],
             deployed: "https://thegrunyons.com/",
             github: "https://github.com/adamalcantara/grunyons"
         },
@@ -43,21 +48,27 @@ function Card() {
             image: GuitarologistImg,
             title: "The Guitarologist",
             description: "A website for my guitar photography built in ReactJS.",
-            link: "/theguitarologist"
+            madewith: [<FaReact />, <FaCss3 />],
+            deployed: "https://theguitarologist.com/",
+            github: "https://github.com/adamalcantara/theguitarologist_react"
         },
         {
             id: "phone",
             image: iphone,
             title: "iPhone Clone",
             description: "A clone of the iPhone 15 Pro built using Next.js with the intent of learning GSAP animations.",
-            link: "/iphoneclone"
+            madewith: [<RiNextjsFill />, <RiTailwindCssFill />],
+            deployed: "https://iphone-clone-4d9a5.web.app/",
+            github: "https://github.com/adamalcantara/iphone_clone"
         },
         {
             id: "finishchecker",
             image: FinishCheckerImg,
             title: "Finish Checker",
             description: "A simple application that uses Open Weather API to help users determine whether they can spray nitrocellulose finishes.",
-            link: "/finishchecker"
+            madewith: [<FaHtml5 />, <FaCss3 />, <IoLogoJavascript />],
+            deployed: "https://adamalcantara.github.io/finishchecker/",
+            github: "https://github.com/adamalcantara/finishchecker"
         },
     ]
     const renderCard = (card, index) => {
@@ -83,7 +94,7 @@ function Card() {
                             <div className='mt-2'>
                                 <p className='text-2xl '>Made with:</p>
                                 {/* Made with icons */}
-                                <div className='flex text-4xl'>
+                                <div className='flex text-4xl *:mr-2'>
                                     {card.madewith}
                                 </div>
                             </div>
