@@ -83,15 +83,15 @@ function Card() {
                     {/* Box for content */}
                     <div className='flex flex-col md:flex-row'>
                         {/* Image */}
-                        <div className='md:w-1/3'>
+                        <div className='md:w-2/5'>
                             <img src={card.image}></img>
                         </div>
 
                         {/* Project content */}
-                        <div className='md:w-2/3 md:ml-6 h-full'>
+                        <div className='md:w-3/5 md:ml-6 h-full'>
                             <p className='text-2xl'>{card.description}</p>
 
-                            <div className='mt-2'>
+                            <div className='mt-5'>
                                 <p className='text-2xl '>Made with:</p>
                                 {/* Made with icons */}
                                 <div className='flex text-4xl *:mr-2'>
@@ -100,7 +100,7 @@ function Card() {
                             </div>
 
                             {/* Link buttons */}
-                            <div className='mt-2'>
+                            <div className='mt-5'>
                                 {card.deployed ? <a href={card.deployed} target='_blank' className='bg-black text-white p-2 mr-2 inline-block'>Deployed Project</a> : ''}
                                 <a href={card.github} target='_blank' className='bg-black text-white p-2 mr-2 inline-block'>GitHub Repository</a>
                             </div>
@@ -112,7 +112,7 @@ function Card() {
         )
     };
 
-    return <div className='w-3/4 md:w-1/2 mx-auto'>
+    return <div className='w-3/4 md:w-3/5 mx-auto'>
         {cardInfo.map(renderCard)}
     </div>;
 }
