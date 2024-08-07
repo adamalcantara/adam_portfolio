@@ -74,7 +74,7 @@ function Card() {
     const renderCard = (card, index) => {
         return (
             <div key={index}>
-                <div id='card' className='h-fit w-[100%] flex flex-col justify-between mb-6 border-b border-zinc-400 md:border-none'>
+                <div id='card' className='h-fit w-[100%] flex flex-col justify-between pb-6 border-b border-zinc-400 md:border-none text-black dark:text-white'>
                     {/* title */}
                     <div className='text-4xl text-center mb-3'>
                         <p>{card.title}</p>
@@ -112,7 +112,7 @@ function Card() {
         )
     };
 
-    return <div className='w-3/4 md:w-3/5 mx-auto'>
+    return <div className='w-3/4 md:w-4/5 lg:w-3/5 mx-auto'>
         {cardInfo.map(renderCard)}
     </div>;
 }
