@@ -38,7 +38,7 @@ function Card() {
             id: "grunyons",
             image: GrunyonsImg,
             title: "The Grunyons",
-            description: "A website for Michigan-based acapella group The Grunyons which was built in ReactJS and features a Spotify implementation.",
+            description: "A website for Michigan-based acapella group The Grunyons which was built in React.",
             madewith: [<FaReact />, <FaCss3 />],
             deployed: "https://thegrunyons.com/",
             github: "https://github.com/adamalcantara/grunyons"
@@ -47,7 +47,7 @@ function Card() {
             id: "theguitarologist",
             image: GuitarologistImg,
             title: "The Guitarologist",
-            description: "A website for my guitar photography built in ReactJS.",
+            description: "A website for my guitar photography built in React.",
             madewith: [<FaReact />, <FaCss3 />],
             deployed: "https://theguitarologist.com/",
             github: "https://github.com/adamalcantara/theguitarologist_react"
@@ -65,7 +65,7 @@ function Card() {
             id: "finishchecker",
             image: FinishCheckerImg,
             title: "Finish Checker",
-            description: "A simple application that uses Open Weather API to help users determine whether they can spray nitrocellulose finishes.",
+            description: "A website that uses a weather API to help users determine whether they can spray nitrocellulose finishes.",
             madewith: [<FaHtml5 />, <FaCss3 />, <IoLogoJavascript />],
             deployed: "https://adamalcantara.github.io/finishchecker/",
             github: "https://github.com/adamalcantara/finishchecker"
