@@ -76,7 +76,7 @@ function Card() {
             <div key={index}>
                 <div id='card' className='h-fit w-[100%] flex flex-col justify-between pb-6 border-b border-zinc-400 md:border-none text-black dark:text-white'>
                     {/* title */}
-                    <div className='text-4xl text-center mb-3'>
+                    <div className='text-4xl text-center mb-7'>
                         <p>{card.title}</p>
                     </div>
 

@@ -9,7 +9,7 @@ const Contact = () => {
           <div className='md:w-1/2 md:mr-5'>
             <ContactForm />
           </div>
-          <div className='md:w-1/2 md:ml-5'>
+          <div className='md:w-1/2 md:ml-5 mb-5 md:mb-0'>
             <p className='text-[20px]'>Should you have any questions about me or any of the projects listed here, please feel free to contact me. Thank you so much for stopping by my website, and I hope you enjoyed my portfolio!</p>
           </div>
         </div>
