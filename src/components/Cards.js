@@ -74,7 +74,7 @@ function Card() {
     const renderCard = (card, index) => {
         return (
             <div key={index}>
-                <div id='card' className='h-fit w-[100%] flex flex-col justify-between mb-6'>
+                <div id='card' className='h-fit w-[100%] flex flex-col justify-between mb-6 border-b border-zinc-400 md:border-none'>
                     {/* title */}
                     <div className='text-4xl text-center mb-3'>
                         <p>{card.title}</p>
@@ -100,9 +100,9 @@ function Card() {
                             </div>
 
                             {/* Link buttons */}
-                            <div className='mt-5'>
-                                {card.deployed ? <a href={card.deployed} target='_blank' className='bg-black text-white p-2 mr-2 inline-block'>Deployed Project</a> : ''}
-                                <a href={card.github} target='_blank' className='bg-black text-white p-2 mr-2 inline-block'>GitHub Repository</a>
+                            <div className='mt-5 mb-4'>
+                                {card.deployed ? <a href={card.deployed} target='_blank' className='bg-black dark:bg-white hover:bg-zinc-500 dark:hover:bg-zinc-500 text-white p-2 dark:text-black inline-block  mr-2'>Deployed Project</a> : ''}
+                                <a href={card.github} target='_blank' className='bg-black dark:bg-white hover:bg-zinc-500 dark:hover:bg-zinc-500 text-white p-2 dark:text-black inline-block'>GitHub Repository</a>
                             </div>
                         </div>
                     </div>

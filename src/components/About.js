@@ -5,7 +5,7 @@ import Resume from '../assets/Alcantara_resume_2024_noinfo.pdf';
 
 const About = () => {
   return (
-    <div className='pt-10 pb-10 dark:bg-zinc-900 ' id='about'>
+    <div className='pt-10 dark:bg-zinc-900 ' id='about'>
       <div className='w-[80%] mx-auto text-black dark:text-white'>
         <p className='text-5xl mb-10 text-center'>About Me</p>
 
@@ -22,10 +22,12 @@ const About = () => {
           <div className='text-[20px]'>In 2024, I earned a Bachelor of Science in Computer Science from Wilmington University. For my final project at Wilmington, I decided I would learn how to build custom WordPress themes using php to harness functionality built into WordPress.</div>
       </div>
 
-      <Skills />
       <div className='flex justify-center mt-5'>
         <a href={Resume} className='bg-black dark:bg-white hover:bg-zinc-500 dark:hover:bg-zinc-500 text-white p-2 dark:text-black inline-block'>Download My Resume</a>
       </div>
+
+      <p className='text-5xl mt-10 mb-10 text-center'>Skills</p>
+      <Skills />
     </div>
     </div >
   )
