@@ -4,7 +4,7 @@ import React from 'react'
 import { FaHtml5, FaCss3, FaReact, FaPython, FaWordpress, FaNode, FaFigma } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
-import { SiExpress, SiAdobe } from "react-icons/si";
+import { SiExpress, SiAdobe, SiFlutter, SiDart } from "react-icons/si";
 import { DiMongodb, DiResponsive } from "react-icons/di";
 
 const Skills = () => {
@@ -61,6 +61,14 @@ const Skills = () => {
             skillIcon: <FaFigma />,
             skillName: "Figma"
         },
+        {
+            skillIcon: <SiFlutter />,
+            skillName: "Flutter"
+        },
+        {
+            skillIcon: <SiDart />,
+            skillName: "Dart"
+        }
     ]
 
     const renderSkill = (skill, index) => {
