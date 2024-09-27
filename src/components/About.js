@@ -1,7 +1,7 @@
 import React from 'react';
 import Skills from './Skills';
 
-import Resume from '../assets/Alcantara_resume_2024_noinfo.pdf';
+import Resume from '../assets/Alcantara_resume_08.25.2024_noinfo.pdf';
 
 const About = () => {
   return (
