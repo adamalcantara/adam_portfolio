@@ -84,7 +84,7 @@ function Card() {
                     <div className='flex flex-col md:flex-row'>
                         {/* Image */}
                         <div className='md:w-2/5'>
-                            <img src={card.image} className='shadow-2xl'></img>
+                            <img src={card.image} className='md:shadow-2xl'></img>
                         </div>
 
                         {/* Project content */}
